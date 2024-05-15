@@ -85,6 +85,6 @@ do
 		fail "$header" "$guard"
 done
 
-echo "::set-output name=fails::$failed"
+echo "fails=$failed" >> $GITHUB_OUTPUT
 
 exit $ret
